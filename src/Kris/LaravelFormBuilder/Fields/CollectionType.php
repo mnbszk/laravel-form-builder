@@ -178,7 +178,7 @@ class CollectionType extends ParentType
         if ($field instanceof ChildFormType) {
             foreach ($field->getChildren() as $child) {
                 if ($child instanceof CollectionType) {
-                    $child->preparePrototype($child->prototype());
+                    // $child->preparePrototype($child->prototype());
                 }
             }
         }
